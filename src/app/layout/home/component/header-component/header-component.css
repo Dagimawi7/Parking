@@ -1,5 +1,5 @@
 :root {
-    --bgcolor: #1a79cf;
+    --bgcolor: #fc1515;
   }
   
   * {
@@ -15,7 +15,7 @@
     justify-content: space-between;
   }
   .logo {
-    color: rgb(4, 4, 4);
+    color: rgb(78, 224, 30);
     align-self: center;
     margin-left: 1.2rem;
     font-size: 2.5rem;
