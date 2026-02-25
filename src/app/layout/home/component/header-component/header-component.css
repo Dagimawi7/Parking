@@ -54,13 +54,15 @@ img{
   border: 2px solid  white ;
   padding: 4px 3px; 
   align-self: center;
+  cursor: pointer;
 }
+
 /* sign up button */
 .signup-button{
-  width: 105px;
   color: white;
   background-color: #0096FF;
   border: 2px solid  #0096FF ;
-  padding: 4px 3px;
-  border-radius: 100px; 
+  padding: 15px 20px;
+  border-radius: 150px; 
+  cursor: pointer;
 }
