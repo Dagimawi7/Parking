@@ -1,10 +1,11 @@
 :root {
-  --bgcolor: #1a79cf;
+  --bgcolor: white
+  ;
 }
  * {
   margin: 0;
   padding: 0;
-  font: ;
+  font: normal;
 }
  .page-header {
   background-color: var(--bgcolor);
@@ -17,6 +18,11 @@
   align-self: center;
   margin-left: 1.2rem;
   font-size: 2.5rem;
+}
+img{
+  height: 100px;
+  width: 100px;
+  align-self: center;
 }
  .nav-bar {
   margin: auto;
@@ -33,9 +39,28 @@
   cursor: pointer;
   display: none;
 }
- button {
-  font-size: 1rem;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 0.9rem;
+
+/* buttons centerd */
+.header-right{
+  align-self: center;
+}
+.header-left{
+  align-self: center;
+}
+/* sign in button */
+.sign-button{
+  width: 105px; 
+  background-color:  white;
+  border: 2px solid  white ;
+  padding: 4px 3px; 
+  align-self: center;
+}
+/* sign up button */
+.signup-button{
+  width: 105px;
+  color: white;
+  background-color: #0096FF;
+  border: 2px solid  #0096FF ;
+  padding: 4px 3px;
+  border-radius: 50px; 
 }
