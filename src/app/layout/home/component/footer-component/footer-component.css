@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+footer{
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    padding-left: 15px ;
+    margin-bottom: -40px;
+}
+/*all left menus */
+.left-menu{
+    position: relative;
+    left: 600px;
+    bottom: 110px
+}
+/* FAQs*/
+.support-box{
+    padding-left: 10px;
+}
+/* all right menu*/
+.Right-menu{
+    position: relative;
+    left: 1350px;
+    bottom: 185px;
+}
+/*Resources*/
+.featurelist{
+    padding-left: 10px;
+}
+/* license section*/
+.footer-bottom{
+    text-align: left;
+    position: relative;
+    top: 18px;
+}
+/* no underline on all a elm */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+/* img logos */
+img{
+    width: 135px;
+    height: 45px;
+    margin-top: 14px;
+}
+/* contact btn */
+.contact-btn{
+    width: 283px;
+    height: 38px;
+    border: 1px solid white;
+    margin-top: 9px;
+}
+/* google button */
+.google-btn{
+    padding-left: 15px;
+}
+/* All social */
+.socials{
+    position: relative;
+    left: 450px;
+    bottom: 40px;
+}
+/* single icon styles */
+.fb-logo{
+   width: 60px;
+   height: 60px;
+   margin-left: 1270px;
+}
+.x-logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+.insta-logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
