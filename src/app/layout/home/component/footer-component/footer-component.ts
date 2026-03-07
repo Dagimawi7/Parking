@@ -1,19 +1,17 @@
 import { Component } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @Component({
   selector: 'app-footer-component', 
-  imports: [MatIconModule,FontAwesomeModule],
+  imports: [MatIconModule,MatButtonModule,MatListModule,MatCardModule],
   templateUrl: './footer-component.html',
   styleUrl: './footer-component.css',
 })
 export class FooterComponent {
-  faXTwitter = faXTwitter;
-  faInstagram = faInstagram;
-  faFacebook = faFacebook;
+
 }

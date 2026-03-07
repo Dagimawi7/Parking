@@ -1,48 +1,60 @@
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+1. mat card
+2. mat icon 
 
-<footer class="footer">
-    <button class="contact-btn">Contact us </button>
-    <div class="footer-left">
-        <a class="appstore-btn" href="#"> <img src="/images/applestore.svg" alt=""></a>
-        <a class="google-btn"><img src="/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt=""></a>
-    </div>
+-->
+<mat-card>
 
-    <ul style="list-style-type: none;"  class="footer-right">
-        <li class="left-menu">
-            <h2>Support</h2>
-            <ul style="list-style-type: none;" class="support-box">
-                <li><a href="#">FAQs</a></li>
-            </ul>
-        </li>
+    <div class="footer">
+       
+        <div class="contact-div">
+            <button class="contact-btn" matButton="outlined">Contact us</button>
+        </div>
+
+
+        <div class="app-logo">
+            <a href="#" target="_blank"><img class="appstore-btn" src="/images/applestore.svg" alt="Appstore logo"></a>
+            <a href="#" target="_blank"><img class="google-btn" src="/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="GoogleStore logo"></a>
+        </div>
+
+        <mat-list class="list-left">
+            <h2 mat-subheader>Support</h2>
+            <mat-list-item><a matLine href="#">FAQs</a></mat-list-item>
+        </mat-list>
+
+        <mat-list class="list-right">
+            <h2 mat-subheader>Resources</h2>
+            <mat-list-item><a matLine href="#">Add parking to your website</a></mat-list-item>
+            <mat-list-item><a matLine href="#">Privacy Policy</a></mat-list-item>
+            <mat-list-item><a matLine href="#">Terms of Service</a></mat-list-item>
+            <mat-list-item><a matLine href="#">Accessibility Statement</a></mat-list-item>
+            <mat-list-item><a matLine href="#">Owners Service Update</a></mat-list-item>
+        </mat-list>
+
+
+        <div class="footer-bottom">
+            <p class="copy-right">© 2026 Parking Inc. 
+                <a href="#"> Privacy </a>
+                <a href="#">. Terms </a>
+                <a href="#">. sitemap </a>
+            </p>
+        </div>  
+
+        <div class="social-icons">
+            <a href="#">
+                <img class="x-logo" src="/images/x.png" alt="x handle">
+            </a>
+            <a href="#">
+                <img class="Insta-logo" src="/images/Instagram.png" alt="Instagram Handle">
+            </a>
+            <a href="#">
+                <img class="fb-logo" src="/images/Facebook_Logo_Secondary.png" alt="Facebook Handle" >
+            </a>
+        </div>
+
     
-        <li style="list-style-type: none;" class="Right-menu">
-            <h2>Resources</h2>
-            <ul style="list-style-type: none;" class="featurelist">
-                <li><a href="#">Add parking to your webiste </a></li>
-                <li><a href="#">Privacy Policy </a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Acessiblity Statement </a></li>
-                <li><a href="#">Owners service update</a></li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr/>
-
-    <div class="socials">
-        <fa-icon class="x" [icon]="faXTwitter"></fa-icon>
-        <fa-icon class="insta" [icon]="faInstagram"></fa-icon>
-        <fa-icon class="fb" [icon]="faFacebook"></fa-icon>
     </div>
+</mat-card>
 
-    <div class="footer-bottom">
-        <p >© 2026 Parking Inc. 
-            <a href="#"> Privacy </a>
-            <a href="#">. Terms </a>
-            <a href="#">. sitemap </a>
-        </p>
-    </div>  
 
-</footer>
