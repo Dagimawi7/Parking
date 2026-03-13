@@ -1,0 +1,23 @@
+/* Make the page a full-height flex column so footer sticks to bottom */
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Main content grows to fill all available space, pushing footer down */
+.main-content {
+    flex: 1;
+}
+
+/* Footer stays at the bottom */
+.footer-wrapper {
+    margin-top: auto;
+}

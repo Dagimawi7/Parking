@@ -1,25 +1,24 @@
 <div class="page-header">
   <div class="logo">
-    <img src="/images/parking-logo.png" alt="logo"/>
+    <img src="/images/parking-logo.png" alt="logo" />
   </div>
-  <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+  <a id="menu-icon" class="menu-icon" (click)="toggleMenu()">
     <i class="fa fa-bars"></i>
   </a>
- 
- <!-- Navbar-->
-  <div id="navigation-bar" class="nav-bar">
+
+  <!-- Navbar-->
+  <div id="navigation-bar" class="nav-bar" [class.active]="menuOpen">
     <a href="#" class="active">How it works</a>
     <a href="#">why parking</a>
     <a href="#">About us </a>
     <a href="#">Contact</a>
   </div>
 
-<!-- singin and out-->
-  <div class="header-right">
+  <!-- singin and out-->
+  <div class="header-right" [class.active]="menuOpen">
     <button class="sign-button">Sign in</button>
   </div>
-  <div class="header-left">
+  <div class="header-left" [class.active]="menuOpen">
     <button class="signup-button">sign up</button>
   </div>
- </div>
- 
+</div>
