@@ -13,9 +13,10 @@
 .footer {
     width: 100%;
     color: white;
-    padding: 30px 20px 15px 20px;
+    padding: 40px 80px 20px 80px;
     background-color: rgb(0, 0, 0);
     overflow-x: hidden; /* no horizontal scrolling */
+   
 }
 
 /* mobile design first to stack them vertically*/
@@ -107,58 +108,3 @@ a:active {
     height: 24px;
 }
 
-
-/*sm (640px) - Larger phones / small tablets */
-@media (min-width: 640px) {
-    .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .contact-div button {
-        padding: 8px 60px;
-    }
-}
-
-
-/* md (768px) - Tablets */
-@media (min-width: 768px) {
-    .footer-links {
-        flex-direction: row;
-        gap: 60px;
-    }
-}
-
-
-/* lg (1024px) - Laptops */
-@media (min-width: 1024px) {
-    .footer-top {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .footer-links {
-        gap: 80px;
-    }
-}
-
-
-/*xl (1280px) - Desktops */
-@media (min-width: 1280px) {
-    .footer {
-        padding: 40px 60px 20px 60px;
-    }
-
-    .footer-links {
-        gap: 100px;
-    }
-}
-
-
-/*  2xl (1536px) - Large monitors */
-@media (min-width: 1536px) {
-    .footer {
-        padding: 40px 80px 20px 80px;
-    }
-}

@@ -10,9 +10,12 @@
 
 .page-header {
   background-color: var(--bgcolor);
-  padding: 1.3rem;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  overflow: auto;
+  resize: both;
 }
 
 .logo {
@@ -22,7 +25,7 @@
   font-size: 2.5rem;
 }
 
-img {
+.logo-img {
   height: 100px;
   width: 100px;
   align-self: center;
