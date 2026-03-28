@@ -1,39 +1,35 @@
-:root {
-  --bgcolor: white;
-}
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font: normal;
 }
 
 .page-header {
-  background-color: var(--bgcolor);
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 100px;
-  overflow: auto;
-  resize: both;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
-  color: rgb(4, 4, 4);
-  align-self: center;
   margin-left: 1.2rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .logo-img {
   height: 100px;
   width: 100px;
+  position: relative;
+  left: -32px;
   align-self: center;
 }
-
+/* navbar */
 .nav-bar {
-  display: flex;
   margin: auto;
+  display: inline-flex;
 }
 
 .nav-bar a {
@@ -52,11 +48,13 @@
 
 /* buttons centerd */
 .header-right {
-  align-self: center;
+  text-align: right;
+  margin: 25px 1px;
 }
 
 .header-left {
-  align-self: center;
+  text-align: right;
+  margin: 25px 1px;
 }
 
 /* sign in button */
@@ -79,3 +77,46 @@
   cursor: pointer;
 }
 
+/* Hambruger menu */
+.menu-bar{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 0;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 738px) {
+  /* Hide navbar by default on mobile */
+  .nav-bar {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 120px; /* distance b/t logo and hambuger menu */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #e12121; /* menu line */
+  }
+
+  /* Show navbar when hamburger is clicked */
+  .nav-bar.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header-right, .header-left {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+}

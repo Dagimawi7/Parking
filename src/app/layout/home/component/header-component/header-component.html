@@ -2,9 +2,8 @@
   <div class="logo">
     <img class="logo-img" src="/images/parking-logo.png" alt="logo" />
   </div>
-  <a id="menu-icon" class="menu-icon" (click)="toggleMenu()">
-    <i class="fa fa-bars"></i>
-  </a>
+
+
 
   <!-- Navbar-->
   <div id="navigation-bar" class="nav-bar" [class.active]="menuOpen">
@@ -14,6 +13,12 @@
     <a href="#">Contact</a>
   </div>
 
+  
+  <!--Hamburger icon-->
+  <label for="menu-toggle" class="hamburger" (click)="toggleMenu()">
+    <img class="menu-bar" src="/images/menu.png" alt="menu-bar">
+  </label>
+
   <!-- singin and out-->
   <div class="header-right" [class.active]="menuOpen">
     <button class="sign-button">Sign in</button>
@@ -21,4 +26,4 @@
   <div class="header-left" [class.active]="menuOpen">
     <button class="signup-button">sign up</button>
   </div>
-</div>
+</div>  

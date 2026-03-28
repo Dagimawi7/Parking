@@ -6,9 +6,6 @@
 }
 .header-component{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: hidden;
 }
 .footer-component{
     margin-top: auto;
