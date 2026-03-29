@@ -1,68 +1,122 @@
-:root {
-  --bgcolor: white
-  ;
-}
- * {
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font: normal;
 }
- .page-header {
-  background-color: var(--bgcolor);
-  padding: 1.3rem;
+
+.page-header {
+  background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
+
 .logo {
-  color: rgb(4, 4, 4);
-  align-self: center;
   margin-left: 1.2rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
-img{
+
+.logo-img {
   height: 100px;
   width: 100px;
+  position: relative;
+  left: -32px;
   align-self: center;
 }
- .nav-bar {
+/* navbar */
+.nav-bar {
   margin: auto;
+  display: inline-flex;
 }
- .nav-bar a {
+
+.nav-bar a {
   color: rgb(0, 0, 0);
   padding: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
 }
- .menu-icon {
+
+.menu-icon {
   color: rgb(0, 0, 0);
   cursor: pointer;
   display: none;
 }
 
 /* buttons centerd */
-.header-right{
-  align-self: center;
+.header-right {
+  text-align: right;
+  margin: 25px 1px;
 }
-.header-left{
-  align-self: center;
+
+.header-left {
+  text-align: right;
+  margin: 25px 1px;
 }
+
 /* sign in button */
-.sign-button{
-  width: 105px; 
-  background-color:  white;
-  border: 2px solid  white ;
-  padding: 4px 3px; 
+.sign-button {
+  width: 105px;
+  background-color: white;
+  border: 2px solid white;
+  padding: 4px 3px;
   align-self: center;
   cursor: pointer;
 }
 
 /* sign up button */
-.signup-button{
+.signup-button {
   color: white;
   background-color: #0096FF;
-  border: 2px solid  #0096FF ;
+  border: 2px solid #0096FF;
   padding: 15px 20px;
-  border-radius: 150px; 
+  border-radius: 150px;
   cursor: pointer;
+}
+
+/* Hambruger menu */
+.menu-bar{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 0;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 738px) {
+  /* Hide navbar by default on mobile */
+  .nav-bar {
+    display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 120px; /* distance b/t logo and hambuger menu */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #e12121; /* menu line */
+  }
+
+  /* Show navbar when hamburger is clicked */
+  .nav-bar.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header-right, .header-left {
+    flex-direction: row;
+    margin-top: 20px;
+  }
 }

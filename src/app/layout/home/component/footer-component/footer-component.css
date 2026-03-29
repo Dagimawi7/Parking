@@ -1,0 +1,110 @@
+/* styling the compoent */
+:host {
+    display: block; /* stretchs box across the page */ 
+    background-color: rgb(0, 0, 0);
+}
+
+* {
+    color: white;
+    box-sizing: border-box;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    color: white;
+    padding: 40px 80px 20px 80px;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden; /* no horizontal scrolling */
+   
+}
+
+/* mobile design first to stack them vertically*/
+
+/* Top section */
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Left side */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.contact-div button {
+    color: white;
+    border-radius: 0px;
+    padding: 8px 40px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.app-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+}
+
+.google-btn {
+    width: 135px;
+    height: 40px;
+}
+
+/* Links area: stacks vertically on mobile */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+/* Bottom bar: stacks on mobile */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(0, 0, 0);
+}
+
+.copy-right {
+    margin: 0;
+    font-size: 14px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.x-logo,
+.fb-logo,
+.Insta-logo {
+    width: 24px;
+    height: 24px;
+}
+
